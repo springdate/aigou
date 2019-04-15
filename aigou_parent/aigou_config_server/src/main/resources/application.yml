@@ -11,5 +11,3 @@ spring:
           search-paths: config #搜索路径
           username: 207416530@qq.com
           password: wasdWASD8
-  application:
-    name: aigou-config-server

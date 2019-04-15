@@ -5,7 +5,6 @@ eureka:
   client:
     serviceUrl:
           defaultZone: http://localhost:1001/eureka/ #eureka服务注册地址
-
 # git管理配置
 spring:
   cloud:

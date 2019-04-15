@@ -26,6 +26,8 @@
         <module>aigou_common_parent</module>
         <module>aigou_commodity_service</module>
         <module>aigou_user_service</module>
+        <module>aigou_config_server</module>
+        <module>aigou_user_service_2</module>
     </modules>
 
     <!--统一管理版本-->

@@ -11,15 +11,8 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @Value("${ip}")
-    private String ip;
-
-    @Value("${port}")
-    private String port;
-
     @GetMapping("/getuser")
     public String getUser(){
-        System.out.println(ip+"========="+port);
         return userService.getUser();
     }
 }

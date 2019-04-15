@@ -1,0 +1,18 @@
+server:
+  port: 1002
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1001/eureka/ #eureka服务注册地址
+
+spring:
+  application:
+    name: aigou-user-service
+  cloud:
+    config:
+      discovery:
+        enabled: true #开启通过服务来访问Config Server的功能
+        service-id: aigou-config-server
+      profile: dev  #指定的环境
+      label: master  #指定分支

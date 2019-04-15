@@ -9,7 +9,7 @@ eureka:
 # git管理配置
 spring:
   application:
-    name: config-server
+    name: aigou-config-server
   cloud:
     config:
       server:

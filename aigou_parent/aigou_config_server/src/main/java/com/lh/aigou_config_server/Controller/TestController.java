@@ -1,17 +1,15 @@
-package com.lh.aigou_user_service_2.controller;
-
+package com.lh.aigou_config_server.Controller;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class UserController {
+public class TestController {
 
-    @Value("")
 
-    @GetMapping("/getuser")
-    public String getuser(){
-        return "宇智波·佐助";
+    @GetMapping("/hi")
+    public String gainConfig(){
+        return "===";
     }
 }

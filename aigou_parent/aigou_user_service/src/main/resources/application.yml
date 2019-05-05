@@ -1,16 +1,10 @@
-server:
-  port: 8020
-
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:1001/eureka/ #eureka服务注册地址
-
 spring:
   profiles:
     active: dev
-  application:
-    name: aigou-user-server
 
 #myabtis-plus
 mybatis-plus:

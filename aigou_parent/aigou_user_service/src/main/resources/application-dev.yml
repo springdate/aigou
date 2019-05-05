@@ -2,13 +2,6 @@
 spring:
   datasource:
     url: ${db-url}
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
     username: ${db-username}
     password: ${db-password}
-
-logging:
-  path: /opt/logs/dev
-  level:
-    com:
-      mcrt:
-        zyzwzx: debug

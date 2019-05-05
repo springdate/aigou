@@ -1,4 +1,8 @@
 package com.lh.aigou_user_service.mapper;
 
-public class SysUserMapper {
+import com.baomidou.mybatisplus.mapper.BaseMapper;
+import com.lh.aigou_user_service.entity.SysUser;
+
+
+public interface SysUserMapper extends BaseMapper<SysUser> {
 }

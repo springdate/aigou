@@ -5,9 +5,29 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:1001/eureka/ #eureka服务注册地址
+
 spring:
+  profiles:
+    active: dev
   application:
     name: aigou-user-server
-user:
-  id: ${port}
-  userName: ${ip}
+
+#myabtis-plus
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*Mapper.xml
+  #实体扫描，多个package用逗号或者分号分隔
+  typeAliasesPackage: com.lh.aigou_user_service.entity
+  global-config:
+    id-type: 2
+    #字段策略 0:"忽略判断",1:"非 NULL 判断"),2:"非空判断"
+    field-strategy: 2
+    #驼峰下划线转换
+    db-column-underline: true
+    #状态删除
+    #logic-delete-value: 1
+    #logic-not-delete-value: 0
+
+pagehelper:
+  offset-as-page-num: true
+  reasonable: true
+  page-size-zero: true

@@ -16,4 +16,6 @@ public class SysUser implements Serializable {
     private Long sysUserId;
 
     private String sysUserName;
+
+    private String account;
 }

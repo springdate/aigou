@@ -18,4 +18,6 @@ public class SysUser implements Serializable {
     private String sysUserName;
 
     private String account;
+
+    private String password;
 }
